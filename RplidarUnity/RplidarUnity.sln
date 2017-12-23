@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RplidarUnity", "Assembly-CSharp.csproj", "{042D23B8-4CEF-EA28-2357-B0BDF34EFE5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{042D23B8-4CEF-EA28-2357-B0BDF34EFE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042D23B8-4CEF-EA28-2357-B0BDF34EFE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042D23B8-4CEF-EA28-2357-B0BDF34EFE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042D23B8-4CEF-EA28-2357-B0BDF34EFE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
