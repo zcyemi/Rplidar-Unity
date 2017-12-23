@@ -8,6 +8,7 @@ A simple wrapper of Rplidar API integrates with Unity.
 4. Click the button grabData you will see data print on the console window.
 5. Another sample scene `Assets/RadarMap.Unity` will convert the grabbed data to points mesh and render to the camera. Just open this scene then press run.
 
+![RadrMap](./rplidarsample.png)
 ## Other issues
 Everything was tested only on Windows system currently.
 You can recompile the c++ dll with visual studio solution /RplidarCpp/RplidarCpp.sln.
