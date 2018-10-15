@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using System.IO;
 
 using System;
 
@@ -20,6 +21,18 @@ public struct LidarData
 
 public class RplidarBinding
 {
+
+    static RplidarBinding()
+    {
+        var currentPath = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
+#if UNITY_EDITOR_64
+        currentPath += Path.PathSeparator + Application.dataPath + "/Plugins/x86_64/";
+#elif UNITY_EDITOR_32
+        currentPath += Path.PathSeparator + Application.dataPath+ "/Plugins/x86/";
+#endif
+        Environment.SetEnvironmentVariable("PATH", currentPath);
+    }
+
 
     [DllImport("RplidarCpp.dll")]
     public static extern int OnConnect(string port);
