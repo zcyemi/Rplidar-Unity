@@ -6,13 +6,11 @@ namespace RplidarNetCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             LidarData[] data = new LidarData[720];
 
             String port;
             while(true){
-                Console.WriteLine("inport COM port:");
+                Console.WriteLine("input COM port:");
                 var comport = Console.ReadLine().ToUpper();
                 int p = 0;
                 if(comport.StartsWith("COM") && comport.Length ==4 && int.TryParse(comport.Substring(3),out p)){
